@@ -4,15 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Page Not Found</title>
-  <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/style.css">
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/theme.min.css">
 </head>
 <body>
   <header>
+    {{ partial "header.html" . }}
     <h1>Oops! Page Not Found</h1>
   </header>
   <main>
     <p>The page you are looking for doesn't exist.</p>
     <a href="{{ .Site.BaseURL }}">Return to Home</a>
   </main>
+  {{ partial "footer.html" . }}
 </body>
 </html>
