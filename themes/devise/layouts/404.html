@@ -4,11 +4,10 @@
          instead of the default. For details on this configuration capability,
          see https://gohugo.io/templates/homepage/#add-content-and-front-matter-to-the-homepage
     -->
-    {{ if .Content }}
-        <div class="pl-sm-4 ml-sm-5">
-            {{ .Content }}
-        </div>
-    {{ else }}
-        {{- partial "category-posts.html" . -}}
-    {{ end }}
+    {{ define "main" }}
+    <main>
+        <h1>404 - Page Not Found</h1>
+        <p>We couldn't find what you were looking for. Please check the URL or return to the <a href="{{ .Site.BaseURL }}">home page</a>.</p>
+    </main>
+    {{ end }}    
 {{ end }}
