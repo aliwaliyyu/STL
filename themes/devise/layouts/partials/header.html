@@ -2,13 +2,13 @@
     <div class="row">
         {{ if isset .Site.Params "home_image" }}
         <div class="col-sm-4 col-12 text-sm-right text-center pt-sm-4">
-            <a href="/" class="text-decoration-none">
+            <a href="{{ "/" | relURL }}" class="text-decoration-none">
                 <img id="home-image" class="rounded-circle"
                     {{ if (and (isset .Site.Params "home_image") (fileExists (printf "static/%s" (strings.TrimPrefix "/" .Site.Params.home_image)))) }}
                         {{ if hasPrefix .Site.Params.home_image "/" }}
-                            src="{{ .Site.Params.home_image }}"
+                            src="{{ .Site.Params.home_image | relURL }}"
                         {{ else }}
-                            src="{{ printf "/%s" .Site.Params.home_image }}"
+                            src="{{ printf "/%s" .Site.Params.home_image | relURL }}"
                         {{ end }}
                     {{ else }}
                         src="{{ "/images/avatar.png" | relURL }}"
@@ -21,7 +21,7 @@
         <div class="col-12 text-center">
         {{ end }}
             <h2 class="m-0 mb-2 mt-4">
-                <a href="/" class="text-decoration-none">
+                <a href="{{ "/" | relURL }}" class="text-decoration-none">
                     {{ if isset .Site.Params "header_title" }}
                         {{ .Site.Params.header_title }}
                     {{ else }}
@@ -40,14 +40,14 @@
                 {{ $currentPage := . }}
                 {{ range .Site.Menus.main }}
                     <li class="list-inline-item">
-                        <a class="badge badge-white {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+                        <a class="badge badge-white {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}active{{end}}" href="{{ .URL | relURL }}" title="{{ .Title }}">{{ .Name }}</a>
                     </li>
                 {{ end }}
             </ul>
             <ul id="nav-social" class="list-inline">
                 {{ range .Site.Params.social }}
                     <li class="list-inline-item mr-3">
-                        <a href="{{ .href | safeURL }}" target="_blank">
+                        <a href="{{ .href | relURL | safeURL }}" target="_blank">
                             <i class="{{ .fa_icon }} text-muted"></i>
                         </a>
                     </li>
