@@ -5,14 +5,103 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Page Not Found</title>
   <link rel="stylesheet" href="http://localhost:1313//css/theme.min.css">
+  <style>
+     
+    .center-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;  
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: #333;
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Oops! Page Not Found</h1>
-  </header>
-  <main>
-    <p>The page you are looking for doesn't exist.</p>
+  <div class="center-content">
+    <header class="container mt-sm-5 mt-4 mb-4 mt-xs-1">
+    <div class="row">
+        
+        <div class="col-sm-4 col-12 text-sm-right text-center pt-sm-4">
+            <a href="/" class="text-decoration-none">
+                <img id="home-image" class="rounded-circle"
+                    
+                        
+                            src="/images/avatar.png"
+                        
+                    
+                />
+            </a>
+        </div>
+        <div class="col-sm-8 col-12 text-sm-left text-center">
+        
+            <h2 class="m-0 mb-2 mt-4">
+                <a href="/" class="text-decoration-none">
+                    
+                        Shillbert Einstein
+                    
+                </a>
+            </h2>
+            <p class="text-muted mb-1">
+                
+                    Decoding Crypto, One Question at a Time
+                
+            </p>
+            <ul id="nav-links" class="list-inline mb-2">
+                
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="/about/" title="About">About</a>
+                    </li>
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="/post/" title="Posts">Posts</a>
+                    </li>
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="/categories/" title="Categories">Categories</a>
+                    </li>
+                
+            </ul>
+            <ul id="nav-social" class="list-inline">
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="https://x.com/Shillbertx100" target="_blank">
+                            <i class="fab fa-twitter fa-1x text-muted"></i>
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+    <hr />
+</header>
+
+    <h1>404: Page not found, it must've gotten lost in the blockchain. 🔗</h1>
     <a href="http://localhost:1313/">Return to Home</a>
-  </main>
+    <footer class="text-center pb-1">
+    <small class="text-muted">
+        
+            I’m still figuring out if we’re in a bear or bull market. 🐻🐂
+        
+        <br>
+    </small>
+</footer>
+
+  </div>
 </body>
 </html>

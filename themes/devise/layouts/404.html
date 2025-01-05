@@ -6,38 +6,37 @@
   <title>Page Not Found</title>
   <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/theme.min.css">
   <style>
-    body {
+    /* Class to center only the div with the 404 page content */
+    .center-content {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      min-height: 100vh; /* Ensures it takes full viewport height */
-      margin: 0;
-      text-align: center; /* Centers the text inside the container */
+      height: 100vh; /* Full viewport height */
+      text-align: center;
     }
-    main {
-      padding: 20px;
-    }
+
     h1 {
       font-size: 2rem;
       color: #333;
     }
+
     a {
       color: #007bff;
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <header>
+  <div class="center-content">
     {{ partial "header.html" . }}
     <h1>404: Page not found, it must've gotten lost in the blockchain. 🔗</h1>
-  </header>
-  <main>
     <a href="{{ .Site.BaseURL }}">Return to Home</a>
-  </main>
-  {{ partial "footer.html" . }}
+    {{ partial "footer.html" . }}
+  </div>
 </body>
 </html>
