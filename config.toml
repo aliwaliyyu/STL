@@ -1,5 +1,5 @@
-baseURL = "https://shilbertsthoughtlab.netlify.app/"
-title = "Shilbert's Thought Lab"
+baseURL = "https://shillbertsthoughtlab.netlify.app/"
+title = "Shillbert's Thought Lab"
 languageCode = "en-us"
 theme = "devise"
 relativeURLs = false
