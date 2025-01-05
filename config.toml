@@ -8,3 +8,39 @@ googleAnalytics = ""
 enableRobotsTXT = true
 copyright = "I’m still figuring out if we’re in a bear or bull market. 🐻🐂"
 
+# Main menu items
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    title = "About"
+    url = "/about/"
+    weight = -110
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    title = "Posts"
+    url = "/post/"
+    weight = -100
+  [[menu.main]]
+    identifier = "categories"
+    name = "Categories"
+    title = "Categories"
+    url = "/categories/"
+    weight = -90
+
+# Configuration Features
+[params]
+  description = "Your meta description"      # Your meta description of the site
+  header_title = "Shillbert Einstein"                 # Your header title
+  header_subtitle = "Decoding Crypto, One Question at a Time" # Your header subtitle
+  home_image = "/images/avatar.png"          # Path to header image starting from the static directory
+  recent_posts = 5                           # Max amount of recent posts to show
+  mainSections = ["posts", "post", "blog"]   # Main sections to include in recent posts
+  [params.style]                             # CSS style overrides
+    backgroundColor = "#f8f9fa"
+    fontColor = "#212529"
+  [[params.social]]
+    fa_icon = "fab fa-twitter fa-1x"          # Font Awesome icon class
+    href = "https://x.com/Shillbertx100"      # Link to associate with icon (http://, https://, mailto:)
+
