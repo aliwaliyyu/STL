@@ -41,14 +41,6 @@ copyright = "I’m still figuring out if we’re in a bear or bull market. 🐻�
     backgroundColor = "#f8f9fa"
     fontColor = "#212529"
   [[params.social]]
-    fa_icon = "fab fa-github fa-1x"          # Font Awesome icon class
-    href = "http://github.com/youruser"      # Link to associate with icon (http://, https://, mailto:)
-  [[params.social]]
-    fa_icon = "fab fa-linkedin-in fa-1x"
-    href = ""
-  [[params.social]]
-    fa_icon = "fab fa-twitter fa-1x"
-    href = ""
-  [[params.social]]
-    fa_icon = "fas fa-at fa-1x"
-    href = ""
+    fa_icon = "fab fa-twitter fa-1x"          # Font Awesome icon class
+    href = "https://x.com/Shillbertx100"      # Link to associate with icon (http://, https://, mailto:)
+
